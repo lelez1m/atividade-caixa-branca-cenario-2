@@ -11,13 +11,17 @@ O sistema lê `estoque.csv` (`codigo;quantidade`), retorna um inteiro para uma c
 
 ## 2. Execução
 
-Requer JDK 17+ e terminal. Na raiz do repositório:
+
+Para executar os testes, é necessário ter o **JDK 17 ou superior** instalado. Abra um terminal na pasta principal do projeto e execute os comandos abaixo.
+
 
 ```bash
 sh testes/executar.sh
 ```
 
-No Windows com PowerShell:
+
+**No Windows, utilizando o PowerShell:**
+
 
 ```powershell
 New-Item -ItemType Directory -Force testes/build | Out-Null
