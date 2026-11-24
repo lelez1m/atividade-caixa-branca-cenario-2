@@ -1,0 +1,16 @@
+PASSOU T01 consulta primeira linha
+PASSOU T02 consulta ap?s itera??o
+PASSOU T03 c?digo ausente
+PASSOU T04 sa?da igual ao dispon?vel
+PASSOU T05 sa?da maior que dispon?vel
+PASSOU T06 sa?da zero
+PASSOU T07 sa?da negativa
+PASSOU T08 c?digo nulo
+PASSOU T09 inje??o de delimitador
+PASSOU T10 n?mero malformado
+PASSOU T11 coluna faltante
+PASSOU T12 estoque negativo
+PASSOU T13 CSV inexistente
+PASSOU T14 falha escrita mant?m estado
+PASSOU T15 append m?ltiplas sa?das
+TOTAL 15 passou; 0 falhou

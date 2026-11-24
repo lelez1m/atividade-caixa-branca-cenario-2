@@ -1,0 +1,6 @@
+﻿Estoque inicial: 10
+Saida negativa aceita: true
+Saida zero aceita: true
+Saida de 2 unidades aceita: true
+Estoque apos as saidas: 10
+Ultima movimentacao: A

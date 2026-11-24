@@ -1,0 +1,20 @@
+digraph Consultar {
+ graph [label="Grafo do ORIGINAL — consultarQuantidade(String)",labelloc=t,fontsize=19,rankdir=TB];
+ node [shape=box,style="rounded,filled",fillcolor="#eef4ff",fontname="Arial"];
+ 1 [label="1 Início",shape=oval]; 2 [label="2 quantidade = 0"];
+ 3 [label="3 Abrir FileReader / BufferedReader\n(try)"];
+ 4 [label="4 while: readLine() != null?",shape=diamond,fillcolor="#fff2d9"];
+ 5 [label="5 colunas = linha.split(';')"];
+ 6 [label="6 colunas[0].equals(codigo)?",shape=diamond,fillcolor="#fff2d9"];
+ 7 [label="7 quantidade = parseInt(colunas[1])"];
+ 8 [label="8 break (sai do while)"];
+ 9 [label="9 catch IOException\n(erro ignorado)",fillcolor="#ffe8e8"];
+ 10 [label="10 return quantidade"];
+ 11 [label="11 Fim (saída unificada)",shape=oval];
+ 12 [label="12 Exceção não capturada\n(ex.: NumberFormatException)",fillcolor="#ffe8e8"];
+ 1->2; 2->3; 3->4 [label="sucesso"]; 3->9 [label="IOException"];
+ 4->5 [label="verdadeiro"]; 4->10 [label="falso (EOF)"]; 4->9 [label="IOException"];
+ 5->6; 6->7 [label="sim"]; 6->4 [label="não (nova iteração)"];
+ 7->8 [label="parse OK"]; 7->12 [label="NumberFormatException\n/ índice inválido"];
+ 8->10 [label="break"]; 9->10; 10->11; 12->11 [style=dashed,label="terminação excepcional"];
+}
