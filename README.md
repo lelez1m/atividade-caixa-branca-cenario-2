@@ -1,6 +1,6 @@
 # Atividade de Teste de Caixa Branca — Cenário 2: Estoque por CSV
 
-> **Autoria individual:** preencher nome, RA e turma antes da entrega. Código-base mantido em `original/`. Os números de linha citados são os da imagem/arquivo original fornecido. A planilha disponibilizada nesta pasta foi construída porque o modelo `PLANO DE TESTE.xlsx` da disciplina não foi anexado: se o professor exigir o arquivo-modelo exato, transferir os registros à aba **CAIXA BRANCO (ESTÁTICO)** desse modelo.
+> **Autoria individual:** Alexandre de jesus leite, RA 251956 e turma N4 antes da entrega. Código-base mantido em `original/`. Os números de linha citados são os da imagem/arquivo original fornecido. A planilha disponibilizada nesta pasta foi construída porque o modelo `PLANO DE TESTE.xlsx` da disciplina não foi anexado: se o professor exigir o arquivo-modelo exato, transferir os registros à aba **CAIXA BRANCO (ESTÁTICO)** desse modelo.
 
 ## 1. Introdução e escopo
 
