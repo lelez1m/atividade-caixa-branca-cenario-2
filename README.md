@@ -1,6 +1,9 @@
 # Atividade de Teste de Caixa Branca — Cenário 2: Estoque por CSV
 
-> **Autoria individual:** Alexandre de jesus leite, RA 251956 e turma N4 antes da entrega. Código-base mantido em `original/`. Os números de linha citados são os da imagem/arquivo original fornecido. A planilha disponibilizada nesta pasta foi construída porque o modelo `PLANO DE TESTE.xlsx` da disciplina não foi anexado: se o professor exigir o arquivo-modelo exato, transferir os registros à aba **CAIXA BRANCO (ESTÁTICO)** desse modelo.
+
+> **Atividade individual — Cenário 2: Estoque por CSV.**
+>
+> Este projeto apresenta a análise estática de um código Java, a modelagem dos fluxos de controle, os cálculos da complexidade ciclomática e os testes realizados. Também inclui uma versão revisada do sistema, com melhorias na validação de dados, no tratamento de erros e no gerenciamento de arquivos.
 
 ## 1. Introdução e escopo
 
