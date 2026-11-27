@@ -67,9 +67,18 @@ A execução foi registrada em `evidencias/execucao-original.txt`.
 
 **Observação:** as versões `original/` e `revisado/` devem ser compiladas separadamente porque possuem classes com o mesmo nome.
 
+
 ## 3. Análise estática
 
-A aba `CAIXA BRANCO (ESTÁTICO)` em `PLANO_DE_TESTE.xlsx` registra 20 ocorrências (localização, categoria, severidade justificada, consequência, recomendação). Pontos de maior risco: `FileWriter` sem fechamento (linhas 32–35), erro de IO ignorado (22–24 e 36–38), saída negativa ou zero (30), CSV malformado não tratado (17–18), log que não reduz saldo (29–35) e escrita de código com quebra de linha (33). Apesar de nomes relativamente claros, a classe centraliza leitura, autorização e escrita, e não documenta o formato e as falhas. A ordem das linhas e a existência de duplicatas são relevantes para o comportamento legado.
+A análise estática foi realizada exclusivamente sobre o **Cenário 2 — Estoque por CSV**, considerando os métodos `consultarQuantidade(String codigo)` e `registrarSaida(String codigo, int quantidade)` da classe `EstoqueArquivo`.
+
+A planilha `PLANO_DE_TESTE.xlsx` contém as **8 verificações do modelo fornecido pelo professor**, preenchidas na aba **CAIXA BRANCO (ESTÁTICO)**. Foram analisados aspectos como documentação, nomenclatura, condições de parada, tratamento de exceções, inicialização de variáveis e organização do código.
+
+Durante a inspeção, foram identificados problemas relevantes, principalmente no **fechamento dos arquivos**, na **validação das quantidades** e no **tratamento das exceções**.
+
+O método `consultarQuantidade()` realiza a leitura do arquivo CSV, enquanto `registrarSaida()` consulta a quantidade disponível e registra a movimentação. A análise considera também a interação entre esses dois métodos.
+
+Os problemas encontrados, os artefatos relacionados e as correções recomendadas estão registrados na planilha. Os grafos e os cálculos de complexidade ciclomática foram elaborados exclusivamente a partir do **código original**, antes da refatoração.
 
 ## 4. Grafos de fluxo do código ORIGINAL
 
